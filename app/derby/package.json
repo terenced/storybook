@@ -1,0 +1,74 @@
+{
+  "name": "@storybook/derby",
+  "version": "1.0.0",
+  "description": "Storybook for DerbyJS: View DerbyJS snippets in isolation with Hot Reloading.",
+  "keywords": [
+    "storybook",
+    "derbyjs",
+    "derby"
+  ],
+  "homepage": "https://github.com/storybookjs/storybook/tree/master/app/derbyjs",
+  "bugs": {
+    "url": "https://github.com/storybookjs/storybook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/storybook.git",
+    "directory": "app/derbyjs"
+  },
+  "license": "MIT",
+  "main": "dist/client/index.js",
+  "types": "dist/client/index.d.ts",
+  "bin": {
+    "build-storybook": "./bin/build.js",
+    "start-storybook": "./bin/index.js",
+    "storybook-server": "./bin/index.js"
+  },
+  "files": [
+    "bin/**/*",
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts",
+    "ts3.5/**/*"
+  ],
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
+  },
+  "dependencies": {
+    "@storybook/addons": "6.0.0-alpha.19",
+    "@storybook/core": "6.0.0-alpha.19",
+    "@types/webpack-env": "^1.15.1",
+    "core-js": "^3.0.1",
+    "global": "^4.3.2",
+    "html-loader": "^0.5.5",
+    "qs": "^6.9.1",
+    "racer": "^0.9.11",
+    "regenerator-runtime": "^0.13.3",
+    "ts-dedent": "^1.1.1"
+  },
+  "devDependencies": {
+    "derby": "^0.10.27",
+    "fs": "0.0.1-security"
+  },
+  "peerDependencies": {
+    "@babel/core": "*",
+    "babel-loader": "^7.0.0 || ^8.0.0",
+    "derby": "^0.10.24",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "typesVersions": {
+    "<=3.5": {
+      "*": [
+        "ts3.5/*"
+      ]
+    }
+  }
+}
